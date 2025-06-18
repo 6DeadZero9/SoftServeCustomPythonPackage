@@ -1,0 +1,32 @@
+{% set name = "soft_serve_custom_python_package" %}
+{% set version = "0.0.1" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  path: ..
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - python
+    - pip
+    - conan
+    - cmake
+    - make
+  run:
+    - python
+
+about:
+  home: https://github.com/6DeadZero9/SoftServeCustomPythonPackage
+  summary: 'Simple example of custom C binding library in Python'
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE.txt
+
+extra:
+  recipe-maintainers:
+   - 6DeadZero9

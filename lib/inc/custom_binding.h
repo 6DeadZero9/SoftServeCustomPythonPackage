@@ -1,0 +1,1 @@
+int generate_key(int bits, char *buffer, int buffer_size);
